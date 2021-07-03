@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="en">main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <!-- HERO -->
+    <div class="container hero">
+        <h1 class="hero__title">"Complex <br> preparation for <br> English UPE"</h1>
+            <p class="hero__description">
+                <span class="hero__description--grey"> It won’t be easy.</span> 
+                But you are guaranteed to get 
+                <span class="hero__description--orange">+25 points</span></p>
+        <button data-modal-open class="hero__button" type="button">I WANT A FREE LESSON</button>
+    </div>
+
+
+
+
+
+
+    <!-- ADVANTAGES -->
+    <div class="container advantages">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <div class="advantages__thumb">
+            <svg width="70px" height="70px">
+                <use href="./images/icons.svg#icon-student"></use>
+            </svg>
+          </div>
+            <p class="advantages__description">Adapted author's UPE program </p>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__thumb">
+            <svg width="70px" height="70px">
+                    <use href="./images/icons.svg#icon-insurance"></use>
+                    </svg>
+          </div>
+                <p class="advantages__description">Adapted author's UPE program </p>
+        </li>
+        <li class="advantages__item">
+                    <div class="advantages__thumb">
+            <svg width="70px" height="70px">
+                    <use href="././images/icons.svg#icon-mobilelearning"></use>
+                    </svg>
+          </div>
+                <p class="advantages__description">Adapted author's UPE program </p>
+        </li>
+            
+
+
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+        </ul>
+
+
+
+    </div>
+    <!-- <МОДАЛЬНОЕ ОКНО> -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-close">
+                    </use>
+                </svg>
+
+            </button>
+
+            <!-- <ФОРМА ДЛЯ ЗАПОЛНЕНИЯ> -->
+
+            <form action="#" class="modal-form">
+                <p class="modal-form-head">Sign up for a lesson</p>
+                <label class="modal-form-field">
+                    Your name:
+                    <span class="modal-forma-input-wrapper">
+                        <input type="text" name="user-name" class="modal-forma-input" minlength="2" placeholder="Oksana"
+                            required>
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Сontact number:
+                    <span class="modal-forma-input-wrapper">
+                        <input type="tel" name="user-phone" class="modal-forma-input"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="000-000-00-00"
+                            placeholder="000-000-00-00" required>
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    E-Mail:
+                    <span class="modal-forma-input-wrapper">
+                        <input type="email" name="user-email" class="modal-forma-input" placeholder="info@devstudio.com"
+                            required>
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </span>
+                </label>
+                <!-- <label class="modal-form-field">
+                    Комментарий
+                    <textarea name="user-message" class="modal-form-comment" placeholder="Введите текст"></textarea>
+                </label> -->
+
+                <!-- <ЧЕКБОКС> -->
+                <input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden"
+                    id="checkbox-policy" required>
+                <label for="checkbox-policy" class="modal-form-checkbox-policy">I have read <a
+                        class="modal-form-policy-link" href="">the Learning Conditions</a> and agree with them, I also agree to the processing, storage, use of my personal data, I agree to receive newsletters
+                        about promotions and other special offers.</label>
+                <button type="submit" class="modal-form-btn">SEND</button>
+            </form>
+        </div>
+    </div>
+    <!-- <ПРОПИСАН js> -->
+    <script src="./js/modal.js"></script>
+
+</body>
+
+</html>
