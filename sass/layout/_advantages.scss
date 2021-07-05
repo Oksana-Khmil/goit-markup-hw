@@ -1,6 +1,6 @@
-// .advantages {
-//   margin: 0 52px;
-// }
+.advantages {
+  margin: 0 auto;
+}
 .advantages__title {
   font-style: 400;
   font-weight: 800;
@@ -22,14 +22,17 @@
 }
 
 .advantages__list {
-  // margin: 0 53px 0 52px;
+  min-width: 216px;
+  // margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  // justify-content: center;
+
   // Tablet 768
   @media screen and (min-width: 768px) {
-    // margin: 0 40px;
+    margin: 0 40px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -38,6 +41,7 @@
   // 1366
   @media screen and (min-width: 768px) {
     // margin: 0 148px 0 188px;
+    margin: 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -47,22 +51,40 @@
 .advantages__item {
   display: flex;
   width: 215px;
+  // justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: none;
 
-  .advantages__item:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 26px;
   }
 
   // Tablet 768
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 21px) / 3);
+    margin-bottom: 26px;
   }
+  //Desktop >1366
+  @media screen and (min-width: 1366px) {
+    position: relative;
+  }
+  // advantages__description
 }
 
 .advantages__thumb {
   margin-right: 10px;
+
+  //Desktop >1366
+  @media screen and (min-width: 1366px) {
+    margin-right: 0;
+  }
 }
 
 .advantages__icon {
+  width: 59px;
+  height: 60px;
+
   //Desktop >1366
   @media screen and (min-width: 1366px) {
     width: 100px;
@@ -74,7 +96,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.65;
+  line-height: 1.64;
 
   display: flex;
   align-items: center;
@@ -84,6 +106,10 @@
   //Desktop >1366
   @media screen and (min-width: 1366px) {
     font-size: 20px;
-    line-height: 1.65;
+    position: absolute;
+    width: 100%;
+    margin: 18px 0 18px 82px;
+
+    // margin-right: 80px;
   }
 }

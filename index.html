@@ -20,12 +20,24 @@
 <body>
     <!-- HERO -->
     <div class="container hero">
-        <h1 class="hero__title">"Complex <br> preparation for <br> English UPE"</h1>
-            <p class="hero__description">
-                <span class="hero__description--grey"> It won’t be easy.</span> 
-                But you are guaranteed to get 
-                <span class="hero__description--orange">+25 points</span></p>
+        <h1 class="hero__title">Complex preparation for English UPE</h1>
+        <p class="hero__description">
+            <span class="hero__description--grey"> It won’t be easy.</span>
+            <span class="hero__description--accent">But you are guaranteed to get</span>
+            <span class="hero__description--orange">+25 points</span>
+        </p>
         <button data-modal-open class="hero__button" type="button">I WANT A FREE LESSON</button>
+        <div class="hero__image">
+            <!-- mobile resolution -->
+            <picture>
+                <source srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png 2x" media="max-widh: 768px">
+                <!-- tablet resolution -->
+                <source srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png" media="min-widh: 768px">
+                <!-- desktop resolution -->
+                <source srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png" media="min-widh: 1200px">
+                <img src="./images/hero-image.png" alt="a lesson is going">
+            </picture>
+        </div>
     </div>
 
 
@@ -43,7 +55,7 @@
                 <use href="./images/icons.svg#icon-student"></use>
             </svg>
           </div>
-            <p class="advantages__description">Adapted author's UPE program </p>
+            <p class="advantages__description">Adapted author's <br> UPE program </p>
         </li>
         <li class="advantages__item">
           <div class="advantages__thumb">
@@ -51,15 +63,17 @@
                     <use href="./images/icons.svg#icon-insurance"></use>
                     </svg>
           </div>
-                <p class="advantages__description">Modern teaching methods </p>
+                <p class="advantages__description">Modern <br>
+                    teaching methods </p>
         </li>
+       
         <li class="advantages__item">
                     <div class="advantages__thumb">
             <svg class="advantages__icon" width="59px" height="60px">
                     <use href="././images/icons.svg#icon-mobilelearning"></use>
                     </svg>
           </div>
-                <p class="advantages__description">Financial guarantee the result </p>
+                <p class="advantages__description">Financial guarantee<br> the result </p>
         </li>
          </ul>
 
