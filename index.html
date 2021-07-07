@@ -19,67 +19,85 @@
 
 <body>
     <!-- HERO -->
+    <section class="section">
     <div class="container hero">
-        <h1 class="hero__title">Complex preparation for English UPE</h1>
-        <p class="hero__description">
-            <span class="hero__description--grey"> It won’t be easy.</span>
-            <span class="hero__description--accent">But you are guaranteed to get</span>
-            <span class="hero__description--orange">+25 points</span>
-        </p>
-        <button data-modal-open class="hero__button" type="button">I WANT A FREE LESSON</button>
+        <div class="hero__content">
+            <h1 class="hero__title">Complex preparation for English UPE</h1>
+            <p class="hero__description">
+                <span class="hero__description--grey"> It won’t be easy.</span>
+                <span class="hero__description--accent">But you are guaranteed to get</span>
+                <span class="hero__description--orange">+25 points</span>
+            </p>
+            <button data-modal-open class="hero__button" type="button">I WANT A FREE LESSON</button>
+        </div>
         <div class="hero__image">
-            <!-- mobile resolution -->
+               <!-- mobile resolution -->
             <picture>
-                <source srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png 2x" media="max-widh: 768px">
+                <source srcset="/images/hero/hero-mobile.png 1x, /images/hero/hero-mobile@2x.png 2x"
+                media="(max-width: 767px)">
                 <!-- tablet resolution -->
-                <source srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png" media="min-widh: 768px">
+                <source srcset="/images/hero/hero-tablet.png 1x, /images/hero/hero-tablet@2x.png 2x"
+                 media="( max-width: 1365px)" >
                 <!-- desktop resolution -->
-                <source srcset="./images/hero-image.png 1x, ./images/hero-image@2x.png" media="min-widh: 1200px">
-                <img src="./images/hero-image.png" alt="a lesson is going">
+                <source srcset="/images/hero/hero-desctop.png 1x, /images/hero/hero-desctop@2x.png 2x" 
+                media="(min-width: 1366px)">
+                <img src="#" alt="a lesson is going">
             </picture>
         </div>
     </div>
+</section>
 
 
 
 
 
 
-    <!-- ADVANTAGES -->
-    <div class="container advantages">
+
+
+
+
+
+
+
+    
+<!-- ADVANTAGES -->
+<section class="section">
+  <div class="container container__advant">
     <h1 class="advantages__title advantages__title--visually-hidden">"Advantages"</h1>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <div class="advantages__thumb">
-            <svg class="advantages__icon" width="59px" height="60px">
-                <use href="./images/icons.svg#icon-student"></use>
-            </svg>
-          </div>
-            <p class="advantages__description">Adapted author's <br> UPE program </p>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__thumb">
-            <svg class="advantages__icon" width="59px" height="60px">
-                    <use href="./images/icons.svg#icon-insurance"></use>
+        <ul class="advantages">
+            <li class="advantages__item advantages__item--student">
+                <div class="advantages__thumb ">
+                    <svg width="40px" height="48px">
+                        <use href="./images/icons.svg#icon-student"></use>
                     </svg>
-          </div>
-                <p class="advantages__description">Modern <br>
-                    teaching methods </p>
-        </li>
-       
-        <li class="advantages__item">
-                    <div class="advantages__thumb">
-            <svg class="advantages__icon" width="59px" height="60px">
-                    <use href="././images/icons.svg#icon-mobilelearning"></use>
+                </div>
+                <p class="advantages__description">Adapted author's UPE program 
+                </p>
+            </li>
+
+<li class="advantages__item advantages__item--insurance">
+    <div class="advantages__thumb">
+                    <svg width="42px" height="48px">
+                        <use href="./images/icons.svg#icon-insurance"></use>
                     </svg>
-          </div>
-                <p class="advantages__description">Financial guarantee<br> the result </p>
-        </li>
-         </ul>
+                </div>
+    <p class="advantages__description">Modern
+        teaching methods </p>
+</li>
 
 
-        
-    </div>
+            <li class="advantages__item advantages__item--mobilelearning">
+                <div class="advantages__thumb">
+                    <svg width="48px" height="47px">
+                        <use href="./images/icons.svg#icon-mobilelearning"></use>
+                    </svg>
+                </div>
+                <p class="advantages__description">Financial guarantee the result </p>
+            </li>
+           
+        </ul>
+      </div>
+    </section>
 
 </body>
 
